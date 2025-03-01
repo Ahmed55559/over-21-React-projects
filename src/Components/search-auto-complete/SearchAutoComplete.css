@@ -1,0 +1,63 @@
+/* Main container for SearchAutoComplete */
+.search-autocomplete-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Input box styling */
+.search-autocomplete-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.search-autocomplete-input:focus {
+    border-color: #007bff;
+}
+
+/* Suggestions dropdown container */
+.search-autocomplete-suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Suggestions list item */
+.search-autocomplete-item {
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-autocomplete-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Loading message styling */
+.search-autocomplete-loading {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Error message styling */
+.search-autocomplete-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

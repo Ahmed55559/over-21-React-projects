@@ -1,0 +1,22 @@
+.TicTacToe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.row {
+    margin: -1px;
+    width: fit-content;
+    display: flex;
+}
+
+.row .square {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    margin: -1px;
+    border: 1px solid red;
+    font-size: 4rem;
+    outline: none;
+}

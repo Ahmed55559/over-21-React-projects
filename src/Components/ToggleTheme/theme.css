@@ -1,0 +1,45 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --btn-bg-color: blue;
+    --btn-text-color: white;
+    --transition: .5s;
+}
+
+[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: white;
+    --btn-bg-color: white;
+    --btn-text-color: black;
+}
+
+.theme-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+button.toggle {
+    transition: var(--transition);
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}

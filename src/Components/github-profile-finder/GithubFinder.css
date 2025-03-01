@@ -1,0 +1,115 @@
+/* Container styling */
+.profile-content {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input and button container */
+.finder {
+    margin-bottom: 40px;
+}
+
+/* Input field styling */
+.finder input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.finder input:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.finder button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.finder button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.finder button:hover:enabled {
+    background-color: #0056b3;
+}
+
+/* Profile data styling */
+.data {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    width: 20rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Avatar image styling */
+.data img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Profile name */
+.data h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Profile bio */
+.data p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Profile link */
+.data a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.data a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Loader styling */
+.finder button[disabled] {
+    opacity: 0.8;
+}

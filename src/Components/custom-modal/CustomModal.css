@@ -1,0 +1,82 @@
+/* Modal Container */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Header */
+.modal-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-content header span {
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.modal-content header span:hover {
+    color: #ff4d4f;
+    /* Close button hover effect */
+}
+
+/* Modal Body */
+.modal-content main {
+    padding: 20px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Modal Footer */
+.modal-content footer {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
